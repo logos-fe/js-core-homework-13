@@ -11,5 +11,4 @@ JS Core Homework 13
   - клавіші shift – мають робити текст у верхньому регістрі при утриманні даної клавіші
 
 Відео
-https://www.veed.io/view/aad11e0d-5b3b-42ab-b983-9cca74426be7?sharingWidget=true
-
+https://drive.google.com/file/d/1Xilpgt1AmrepeJkPVrg50x_46c3ftYo3/view?usp=sharing
