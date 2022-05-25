@@ -10,15 +10,8 @@ let bs = document.querySelector('.sb');
 let text = document.querySelector('.text');
 let n = 1;
 
-// TextContent - текст всередині елемента
-// console.log(text.textContent)
 
-// // document.addEventListener('keydown', (event) => {
-// //    text.textContent = text.textContent + key.textContent
-// // })
-// console.log(rows);
-// console.log(keys1);
-// console.log(keys2);
+
 document.addEventListener('keydown', (event) => {
    for (let i = 0; i < keys.length; i++){
       if (event.key === keys[i].textContent){
@@ -71,27 +64,9 @@ if(event.key === 'Enter'){
 
 
 document.addEventListener('keyup', (event) => {
-   for (let i = 0; i < keys1.length; i++){
-      if (event.key === keys1[i].textContent){
-         keys1[i].classList.remove('keyd');
+   for (let i = 0; i < keys.length; i++){
+      if (event.key === keys[i].textContent){
+         keys[i].classList.remove('keyd');
       }
-   }
-   for (let i = 0; i < keys2.length; i++){
-      if (event.key === keys2[i].textContent){
-         keys2[i].classList.remove('keyd');
-      }
-   }
-   for (let i = 0; i < keys3.length; i++){
-      if (event.key === keys3[i].textContent){
-         keys3[i].classList.remove('keyd');
-      }
-   }
-   for (let i = 0; i < keys4.length; i++){
-      if (event.key === keys4[i].textContent){
-         keys4[i].classList.remove('keyd');
-      }
-   }
-   if (event.key === ' ') {
-      bs.classList.remove('keyd')
    }
 })
