@@ -1,5 +1,6 @@
 const body = document.querySelector('body')
 const key = document.querySelector('.key');
+let keys = document.querySelectorAll('.key')
 let rows = document.querySelector('.keyboard').children;
 let keys1 = document.querySelector('.row1').children;
 let keys2 = document.querySelector('.row2').children;
@@ -19,29 +20,12 @@ let n = 1;
 // console.log(keys1);
 // console.log(keys2);
 document.addEventListener('keydown', (event) => {
-   for (let i = 0; i < keys1.length; i++){
-      if (event.key === keys1[i].textContent){
-         keys1[i].classList.add('keyd');
+   for (let i = 0; i < keys.length; i++){
+      if (event.key === keys[i].textContent){
+         keys[i].classList.add('keyd');
       }
    }
-   for (let i = 0; i < keys2.length; i++){
-      if (event.key === keys2[i].textContent){
-         keys2[i].classList.add('keyd');
-      }
-   }
-   for (let i = 0; i < keys3.length; i++){
-      if (event.key === keys3[i].textContent){
-         keys3[i].classList.add('keyd');
-      }
-   }
-   for (let i = 0; i < keys4.length; i++){
-      if (event.key === keys4[i].textContent){
-         keys4[i].classList.add('keyd');
-      }
-   }
-   if (event.key === ' ') {
-      bs.classList.add('keyd')
-   }
+   
    if(event.key === 'CapsLock'){
       n++
       if(n % 2 ===0){
