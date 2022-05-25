@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: bisque;
+}
+.main {
+    top: 100px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    gap: 10px;
+}
+.typeText {
+    width: 700px;
+    height: 300px;
+    justify-self: center;
+}
+.main_keyboard {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    width: 900px;
+    justify-content: center;
+}
+.row_1 {
+    display: grid;
+    grid-template-columns: repeat(14, 70px);
+    width: 100%;
+}
+.btn {
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+}
+.btn_backspace {
+    width: 80px;
+}
+.row_2 {
+    display: grid;
+    grid-template-columns: repeat(14, 70px);
+    width: 100%;
+}
+.row_3 {
+    display: grid;
+    grid-template-columns: repeat(13, 70px);
+    width: 100%;
+}
+.row_4 {
+    display: grid;
+    grid-template-columns: repeat(12, 70px);
+    width: 100%;
+}
+.row {
+    justify-items: center;
+}
+.row_5 {
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    width: 100%;
+    
+}
+.btn_space {
+    width: 300px;
+}
+.btn.active {
+    background-color: rgb(15, 97, 107);
+    color: white;
+}
